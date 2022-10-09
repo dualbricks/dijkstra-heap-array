@@ -1,6 +1,6 @@
 public class MatrixGraph {
-        private int[][] adjMatrix;
-        private int V;
+        private final int[][] adjMatrix;
+        private final int V;
 
         public MatrixGraph(int V) {
             this.V = V;
@@ -29,4 +29,10 @@ public class MatrixGraph {
             }
             return s.toString();
         }
+        public int[][] getAdjMatrix() {
+            return  adjMatrix;
+        }
+        public int getV() {
+            return V;
+    }
 }
